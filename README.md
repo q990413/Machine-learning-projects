@@ -9,7 +9,7 @@ This README document provides an overview of the projects I completed during my 
 In this project, I utilized the Keras API to develop an object recognition system. The key components of this project included:
 
 - **Data Preparation**: Preprocessing images and organizing datasets.
-- **Model Architecture**: Designing and implementing a convolutional neural network (CNN) using Keras.
+- **Model Architecture**: Fine-tunning and implementing a Visual Transformer network (VIT) using Keras.
 - **Training**: Training the CNN on the dataset and using techniques like data augmentation to improve performance.
 - **Evaluation**: Assessing the model's accuracy and fine-tuning hyperparameters to optimize results.
 - **Deployment**: Creating a script to load the trained model and make predictions on new images.
