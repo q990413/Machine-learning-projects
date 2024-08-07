@@ -1,169 +1,53 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+# README
 
-\documentclass[letterpaper,11pt]{article}
+## Machine Learning Course Projects
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
+This README document provides an overview of the projects I completed during my machine learning course. The projects covered a range of topics and techniques, providing hands-on experience with various machine learning algorithms and tools.
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+### 1. Object Recognition with Keras API
 
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+In this project, I utilized the Keras API to develop an object recognition system. The key components of this project included:
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+- **Data Preparation**: Preprocessing images and organizing datasets.
+- **Model Architecture**: Designing and implementing a convolutional neural network (CNN) using Keras.
+- **Training**: Training the CNN on the dataset and using techniques like data augmentation to improve performance.
+- **Evaluation**: Assessing the model's accuracy and fine-tuning hyperparameters to optimize results.
+- **Deployment**: Creating a script to load the trained model and make predictions on new images.
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+### 2. Lasso and Linear Regressions
 
-\urlstyle{same}
+This project focused on understanding and implementing regression techniques. Key aspects included:
 
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+- **Linear Regression**: Implementing a simple linear regression model and understanding its assumptions and limitations.
+- **Lasso Regression**: Applying lasso regression to introduce regularization and prevent overfitting.
+- **Comparison**: Comparing the performance of linear and lasso regressions on various datasets.
+- **Visualization**: Plotting results to visualize the fit and the effect of regularization.
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+### 3. Random Forest
 
-% Ensure that generated PDF is machine readable/ATS parsable
-\pdfgentounicode=1
+In this project, I explored the Random Forest algorithm for classification and regression tasks. The project involved:
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+- **Data Preparation**: Cleaning and preparing the dataset for use with the Random Forest algorithm.
+- **Model Implementation**: Implementing the Random Forest algorithm and training it on the dataset.
+- **Hyperparameter Tuning**: Using techniques such as grid search to find the best hyperparameters for the model.
+- **Evaluation**: Evaluating the model's performance using metrics like accuracy, precision, recall, and F1-score.
+- **Feature Importance**: Analyzing the importance of different features in making predictions.
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
+### 4. Fine-Tuning Models
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
+This project involved fine-tuning pre-trained models to improve performance on specific tasks. Key activities included:
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
+- **Transfer Learning**: Utilizing pre-trained models and adapting them to new datasets.
+- **Fine-Tuning**: Adjusting the parameters and layers of the pre-trained models to enhance performance.
+- **Optimization**: Using advanced optimization techniques to further improve model accuracy.
+- **Comparison**: Comparing the performance of fine-tuned models with baseline models.
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+## Conclusion
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+These projects provided a comprehensive understanding of various machine learning techniques and their applications. By working on these projects, I gained valuable experience in data preprocessing, model implementation, evaluation, and optimization. The skills and knowledge acquired during this course will be instrumental in my future endeavors in the field of machine learning.
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+For any questions or further information, please feel free to contact me.
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+---
 
-\begin{document}
-
-%----------HEADING----------
-\begin{center}
-    \textbf{\Huge \scshape Hajun Song} \\ \vspace{10pt}
-    \small 0432 821 772 $|$ \href{mailto:lolzing78@gmail.com}{lolzing78@gmail.com} \\
-\end{center}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Queensland University of Technology}{Brisbane, QLD}
-      {Bachelor of Information Technology in Computer Science, Minor in Cyber Security}{Expected Grad - Dec 2024}
-    \resumeItemListStart
-      \resumeItem{\textbf{Relevant Coursework}{: Cyber Security, Modern Data Management, Database Management, Machine Learning, Algorithm and Complexity, Networks, Programming Principles, Microprocessors and Digital Systems, Building IT Systems}}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------WORK EXPERIENCE-----------
-\section{Work Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Go Gaming Lounge}{Manager}{2018 -- Current}{}  
-      \resumeItemListStart
-        \resumeItem{Supervised a team to ensure a safe and efficient working environment.}
-        \resumeItem{Implemented and managed a flexible timetable shift to optimize operational efficiency. Designed schedules to accommodate peak hours and maximize staff effectiveness.}
-        \resumeItem{Maintained and updated the local storage server, ensuring seamless data management and accessibility, contributing to streamlined operations.}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Bae Song PTY LTD}{Commercial Cleaning Safety Supervisor}{2020 -- Current}{}
-      \resumeItemListStart
-        \resumeItem{Developed and implemented safety hazard protocols, identified and mitigated potential risks for a secure work environment.}
-        \resumeItem{Maintained strong client relationships, committed to continuous improvement, driving enhancements for operational efficiency.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Academic Projects}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Movie Collection: Algorithmic Analysis and Testing in C\#}}{C\#}
-      \resumeItemListStart
-        \resumeItem{Examined data structures within a movie collection using algorithms and assessing their time complexity.}
-        \resumeItem{Developed a software test plan, generated test data, and analyzed the outcomes to ensure effective algorithmic implementation and robust testing methodology.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Object Recognition with Keras API}}{Python | Keras, Team project}
-      \resumeItemListStart
-        \resumeItem{Utilized the Caltech-256 dataset to implement methods for identifying categories. Developed an image recognition program using the Keras API, specifically Visual Transformers.}
-        \resumeItem{Achieved over 50\% accuracy on validation data despite challenges with limited training samples and model complexity, marking a significant milestone in applying deep learning models to practical datasets.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
-  \resumeSubHeadingListStart
-    \resumeItemListStart
-      \resumeItem{\textbf{Languages}{: C\#, Python, C, SQL (Basic), JavaScript (Basic), HTML/CSS}}
-      \resumeItem{\textbf{Developer Tools}{: Git, Google Colaboratory, VS Code, Visual Studio, IntelliJ}}
-      \resumeItem{\textbf{Libraries}{: Keras, pandas, NumPy, Matplotlib}}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-\end{document}
+This README was created to summarize my experiences and learnings from the machine learning course. Thank you for taking the time to read it.
